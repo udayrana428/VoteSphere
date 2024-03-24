@@ -1,5 +1,5 @@
 {
-  "name": "voterregistrationapp",
+  "name": "VoteSphere",
   "version": "1.0.0",
   "description": "Its a website for the registration of voters.",
   "main": "app.js",

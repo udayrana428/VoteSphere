@@ -16,10 +16,10 @@ app.use(session({
   secret: 'secret123',
   resave: true,
   saveUninitialized: true,
-  cookie: { secure: false } // Set secure to true if using HTTPS
+  cookie: { secure: false } 
 }));
 
-// Set EJS as the view engine
+//view engine
 app.set('view engine', 'ejs');
 
 // Routes
@@ -32,6 +32,11 @@ app.use('/', indexRoute);
 app.use('/auth', authRoute);
 app.use('/dashboard', dashboardRoute);
 app.use('/profile', profileRoute)
+
+app.use((req, res, next) => {
+  res.render('layouts/mainLayout', { content: 'pageNotFound', isLoggedIn: req.session.isLoggedIn });
+});
+
 
 // Start server
 app.listen(PORT, () => {

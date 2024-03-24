@@ -3,16 +3,16 @@ const router = express.Router();
 const fs= require('fs')
 
 // import voters from '../data/voters';
-const voters = require("../data/voters")
+let voters = JSON.parse(fs.readFileSync('./data/data.json', 'utf8'));
 
 // Login route
 router.get('/login', (req, res) => {
-  res.render('layouts/mainLayout', { content: 'login' });
+  res.render('layouts/mainLayout', { content: 'login', isLoggedIn: req.session.isLoggedIn });
 });
 
 // Register route
 router.get('/register', (req, res) => {
-  res.render('layouts/mainLayout', { content: 'register' });
+  res.render('layouts/mainLayout', { content: 'register', isLoggedIn: req.session.isLoggedIn });
 });
 
 // Logout route
@@ -62,25 +62,28 @@ router.post('/register', async (req, res) => {
 
   // Create a new voter object
   const newVoter = {
-      id: voters.length + 1, // Generate a unique ID for the new voter
+      id: voters.length + 1, 
+      isAdmin: false,
+      isRegistered: false,
       name: {
           first: firstName,
           last: lastName,
       },
       age: req.body.age || "",
       gender: req.body.gender || "",
-      address: newAddress, // Use the new address object
+      address: newAddress, 
       phone: req.body.phone || "",
       email: email,
       password: password,
-      profileImage: req.body.profileImage || "" // Assuming you're sending profile image URL in the request
+      profileImage: req.body.profileImage || "" 
   };
 
-  // Add the new voter to the voters array
+  
   voters.push(newVoter);
 
-  // Optionally, you can send a response indicating successful registration
-  res.status(201).json({ message: 'Registration successful', voter: newVoter });
+  fs.writeFileSync('./data/data.json', JSON.stringify(voters));
+
+  // res.status(201).json({ message: 'Registration successful', voter: newVoter });
   res.redirect('/auth/login')
 });
 

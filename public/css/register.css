@@ -15,6 +15,14 @@
     background-color: var(--color-2)!important;
     padding: 4px 10px;
 }
+.star{
+    color: red;
+    font-size: 1.3rem;
+}
+/* .btns:hover{
+    background-color: #8091B3!important;
+    border-color: #8091B3!important;
+} */
 
 .register-sec{
     height: 90vh;
