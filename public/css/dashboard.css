@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-1: #E0F1FF;
+    --color-2: #3F5F8F;
+    --color-3: #0BFFBF;
+    --color-4: #8091B3;
+}
+
+/* Utilities */
+.btns{
+    background-color: var(--color-2)!important;
+    padding: 4px 10px;
+}
+
+
+.dashboard-sec{
+    margin: 5rem 0;
+}

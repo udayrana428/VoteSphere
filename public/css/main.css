@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #E0F1FF;
+    --color-2: #3F5F8F;
+    --color-3: #0BFFBF;
+    --color-4: #8091B3;
+}
+
+/* Utilities */
+.btns {
+    background-color: var(--color-2) !important;
+    /* padding: 4px 10px; */
+    transition: all .3s ease-in;
+}
+.btns:hover{
+    background-color: var(--color-3)!important;
+    border-color: var(--color-3)!important;
+    color: black!important;
+}
+
+
+.main-sec {
+    background-color: var(--color-1);
+}
+
+/* Navbar */
+header nav {
+    /* border: 2px solid var(--color-2);
+    border-radius: 5px; */
+
+}
+
+.brand-logo {
+    color: var(--color-2) !important;
+    font-weight: 600;
+    font-size: 2em !important;
+}
+
+.nav-link {
+    color: var(--color-2) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-bottom: 2px solid var(--color-2) !important;
+    border: none !important;
+}
+
+.nav-link {}
+
+.nav-link:hover {
+    color: var(--color-4) !important;
+}
+
+.active {
+    border-bottom: 2px solid var(--color-2) !important;
+}
+
+.navbar-nav {
+    /* background-color: cyan; */
+    /* display: flex!important; */
+    /* justify-content: space-between!important; */
+    /* width: 100%; */
+}
+
+/* FOOTER */
+footer .brand-logo {
+    color: var(--color-3) !important;
+
+}
+
+footer .f-right {
+    background: rgba(11, 11, 11, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.l-box li,
+.r-box li {
+    list-style: none;
+}
+
+.f-links {
+    list-style: none;
+    margin-right: 5px;
+}
+
+.socials-container i {
+    font-size: 1.5rem;
+    margin: 0 .5rem;
+}
+
+@media screen and (max-width:480px) {
+    footer {}
+}

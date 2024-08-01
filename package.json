@@ -1,0 +1,18 @@
+{
+  "name": "VoteSphere",
+  "version": "1.0.0",
+  "description": "Its a website for the registration of voters.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uday Rana",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-session": "^1.18.0",
+    "nodemon": "^3.1.4"
+  }
+}

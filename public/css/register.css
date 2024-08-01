@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-1: #E0F1FF;
+    --color-2: #3F5F8F;
+    --color-3: #0BFFBF;
+    --color-4: #8091B3;
+}
+
+/* Utilities */
+.btns{
+    background-color: var(--color-2)!important;
+    padding: 4px 10px;
+}
+.star{
+    color: red;
+    font-size: 1.3rem;
+}
+/* .btns:hover{
+    background-color: #8091B3!important;
+    border-color: #8091B3!important;
+} */
+
+.register-sec{
+    height: 90vh;
+}
+.register-modal img{
+    max-width: 40%;
+}
+.register-modal form{
+    max-width: 60%;
+    background-color: white;
+}
+.register-modal form button{
+
+}
+
+@media screen and (max-width: 480px) {
+    .register-modal{
+        flex-direction: column;
+    }
+    .register-modal img{
+        display: none;
+    }
+    .register-modal form{
+        min-width: 100%;
+    }
+    form .f-container{
+        width: 100%!important ;
+    }
+}

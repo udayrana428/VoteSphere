@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-1: #E0F1FF;
+    --color-2: #3F5F8F;
+    --color-3: #0BFFBF;
+    --color-4: #8091B3;
+}
+.home-sec{
+    background-color: var(--primary-color);
+}
+
+.left h2{
+    color: var(--color-2);
+    font-size: 60px;
+}
+.left p{
+    color: var(--color-4);
+    font-size: 2em;
+}
+
+@media screen and (max-width:480px) {
+    .home-sec{
+        flex-direction: column;
+        margin: 1em!important;
+    }
+    .home-sec .left{
+        min-width: 100%!important;
+    }
+    .home-sec .right{
+        min-width: 100%;
+    }
+}

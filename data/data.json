@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "isAdmin": true,
+    "isRegistered": true,
+    "name": {
+      "first": "Uday",
+      "last": "Rana"
+    },
+    "age": 22,
+    "gender": "Male",
+    "address": {
+      "street": "Mangalmurthi",
+      "district": "Nagpur",
+      "state": "Maharashtra"
+    },
+    "phone": "9834183296",
+    "email": "udayrana428@gmail.com",
+    "password": "Uday@428",
+    "profileImage": "https://example.com/profiles/john_doe.jpg"
+  },
+  {
+    "id": 2,
+    "isAdmin": false,
+    "isRegistered": true,
+    "name": {
+      "first": "Pankaj",
+      "last": "Rana"
+    },
+    "age": "18",
+    "gender": "Male",
+    "address": {
+      "street": "456 Elm St",
+      "district": "akola",
+      "state": "gujrat"
+    },
+    "phone": "9834183257",
+    "email": "pankaj@gmail.com",
+    "password": "Pankaj@123",
+    "profileImage": "https://marketplace.canva.com/EAFHfL_zPBk/1/0/1600w/canva-yellow-inspiration-modern-instagram-profile-picture-kpZhUIzCx_w.jpg"
+  },
+  {
+    "id": 3,
+    "isAdmin": false,
+    "isRegistered": false,
+    "name": {
+      "first": "Michael",
+      "last": "Johnson"
+    },
+    "age": 35,
+    "gender": "Male",
+    "address": {
+      "street": "789 Oak St",
+      "district": "DistrictName",
+      "state": "StateName"
+    },
+    "phone": "345-678-9012",
+    "email": "michael.johnson@example.com",
+    "password": "hashed_password_3",
+    "profileImage": "https://example.com/profiles/michael_johnson.jpg"
+  },
+  {
+    "id": 4,
+    "isAdmin": false,
+    "isRegistered": false,
+    "name": {
+      "first": "raj",
+      "last": "pandey"
+    },
+    "age": "22",
+    "gender": "Male",
+    "address": {
+      "street": "Manishnagar",
+      "district": "amravati",
+      "state": "maharashtra"
+    },
+    "phone": "",
+    "email": "raj@gmail.com",
+    "password": "raj@123",
+    "profileImage": "https://media.licdn.com/dms/image/D5635AQE9Fvif5Sw_dQ/profile-framedphoto-shrink_800_800/0/1709567911015?e=1711792800&v=beta&t=w-tFEoQuxyhEZeg0lRd8FnvSoCXVhiXe4r4ysbp-0QY"
+  },
+  {
+    "id": 5,
+    "isAdmin": false,
+    "isRegistered": true,
+    "name": {
+      "first": "sandhya",
+      "last": "rana"
+    },
+    "age": "",
+    "gender": "",
+    "address": {
+      "street": "",
+      "district": "",
+      "state": ""
+    },
+    "phone": "",
+    "email": "sandhya@gmail.com",
+    "password": "sandhya@123",
+    "profileImage": ""
+  },
+  {
+    "id": 6,
+    "isAdmin": false,
+    "isRegistered": false,
+    "name": {
+      "first": "Gaurav",
+      "last": "Sharma"
+    },
+    "age": "23",
+    "gender": "Male",
+    "address": {
+      "street": "Wathoda",
+      "district": "chandrapur",
+      "state": "maharashtra"
+    },
+    "phone": "",
+    "email": "gaurav@gmail.com",
+    "password": "Gaurav@123",
+    "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YTJdS9ltAZry0O-s06U16GjHRSp81TzPBGnDaivQSk3Dfkl4jaiYIpPpWf6HXTKD9qg&usqp=CAU"
+  }
+]
